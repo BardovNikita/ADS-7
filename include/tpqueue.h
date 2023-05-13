@@ -6,7 +6,7 @@
 
 template<typename T>
 class TPQueue {
-  private:
+   private:
     struct Item {
         T data;
         Item* next;
@@ -15,8 +15,8 @@ class TPQueue {
     Item* head;
     Item* tail;
     TPQueue::Item* create(const T&);
-  
-public:
+
+ public:
     TPQueue() : head(nullptr), tail(nullptr) { }
     ~TPQueue();
     void push(const T&);
